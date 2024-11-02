@@ -16,18 +16,16 @@ int main()
 	int t = -1;
 
 	//User input: Module File Path
-	//cout << "Enter the Module File Path" << endl;
-	//cin >> Filepath;
-	Filepath = "Module.v";
+	cout << "Enter the Module File Path" << endl;
+	cin >> Filepath;
 	//Setting the Module File Path in the File Class
 	f.SetFilePath(Filepath);
 	//Reading the Module File and storing the strings in a queue
 	queue<string> module = f.readFileToQueue();
 
 	//User input: Stimuli File Path
-	//cout << "Enter the Stimuli File Path" << endl;
-	//cin >> Filepath;
-	Filepath = "Stimuli.stim";
+	cout << "Enter the Stimuli File Path" << endl;
+	cin >> Filepath;
 	//Setting the Stimuli File Path in the File Class
 	f.SetFilePath(Filepath);
 	//Reading the Stimuli File and storing the strings in a queue
@@ -52,9 +50,8 @@ int main()
 	}
 
 	//User input: Simulation File Path
-	//cout << "Enter the Simulation File Path" << endl;
-	//cin >> Filepath;
-	Filepath = "Simulation.sim";
+	cout << "Enter the Simulation File Path" << endl;
+	cin >> Filepath;
 	//Setting the Stimuli File Path in the File Class
 	f.SetFilePath(Filepath);
 	//Writing the output vector into the Simulation File
