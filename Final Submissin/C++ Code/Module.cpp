@@ -8,6 +8,10 @@ void Module::SetLines(queue<string> x) {
     lines = x;
 }
 
+void Module::SetInputs(vector<pair<char, bool>> i) {
+    inputs = i;
+}
+
 //A Get Function in order to use the inputs identified from processing the Module in the Stimuli class
 vector<pair<char, bool>> Module::GetInputs() {
     return inputs;
