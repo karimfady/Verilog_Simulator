@@ -8,6 +8,10 @@ void Stimuli::SetInputs(vector<pair<char, bool>> i) {
     inputs = i;
 }
 
+vector<pair<char, bool>> Stimuli::GetInputs() {
+    return inputs;
+}
+
 //Returns the last time input in the Stimuli Queue 
 int Stimuli::CalMaxTime(queue<string> lines) {
 
@@ -64,6 +68,7 @@ void Stimuli::processStimuliQueue(queue<string>& lines, int& t, vector<string>& 
     //Update the input vector with the new bool values
     for (auto& input : inputs) {
         if (input.first == signal) {
+            input.second = value;
             ostringstream oss;
             oss << currentTime << " " << input.first << "= " << input.second;
             outputString = oss.str();
