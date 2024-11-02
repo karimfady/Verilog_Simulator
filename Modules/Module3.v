@@ -17,7 +17,7 @@ or #(9) g2 (y,a,b);
 not #(2) g1 (n,b);
      
 and #(5) g0 (w,y,c);
-and #(5) g0 (z,n,c);
-or #(9) g2 (o,w,cz);
+and #(5) g6 (z,n,c);
+or #(9) g2 (o,w,z);
 
 endmodule; 
