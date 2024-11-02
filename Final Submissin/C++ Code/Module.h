@@ -30,6 +30,8 @@ public:
 
     void SetLines(queue<string> x);
 
+    void SetInputs(vector<pair<char, bool>> i);
+
     vector<pair<char, bool>> GetInputs();
 
     bool Nand(bool a, bool b);
